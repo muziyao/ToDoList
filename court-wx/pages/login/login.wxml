@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view class="register">
+  <image src="{{wxImage}}"></image>
+  <text>{{wxNickname}}</text>
+</view>
+<view class="box" >
+  <button wx:if="{{register_btn}}" class = "box-btn1" bindgetuserinfo="bindGetUserInfo" open-type="getUserInfo">登录</button>
+  <button class = "box-btn2" bindtap="addTask">添加</button>
+  <button class = "box-btn3" bindtap="historyBacklog">历史待办</button>
+  <button class = "quit-register" bindtap="quitRegister" wx:if="{{!register_btn}}">退出登录</button>
+</view>

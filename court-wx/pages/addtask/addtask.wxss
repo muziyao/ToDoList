@@ -1,0 +1,37 @@
+/* pages/addtask/addtask.wxss */
+.box {
+  width: 318px;
+  height: 220px;
+}
+.small-box {
+  width: 318px;
+  height: 50px;
+  display: flex;
+  margin-top: 10px;
+}
+.small-box text{
+  width: 68px;
+  height: 152px;
+  /* 以下文字居中 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 以上文字居中 */
+}
+.small-box textarea {
+  width: 250px;
+  height: 150px;
+  border: 1px solid #70bcf6; 
+}
+.section{
+  color: #70bcf6 ;
+  margin:20rpx;
+  padding:20rpx;
+  text-align: center;
+}
+.small-btn {
+  width: 100px;
+  padding: 50px;
+  margin: 0 auto;
+}

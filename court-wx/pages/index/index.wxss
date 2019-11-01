@@ -1,0 +1,13 @@
+/**index.wxss**/
+register {
+  display: flex;
+}
+.showData {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showData text{
+  width: 100px;
+}

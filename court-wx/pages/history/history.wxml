@@ -1,0 +1,25 @@
+<!--pages/history/history.wxml-->
+ <view class="section">  
+ 
+    <picker mode="date" value="{{date}}" start="1978-01-01" end="2050-12-31"  bindchange="bindDateChange">  
+      <view class="picker">  
+        <text>日期: {{dates}}</text>
+        <image class="image-icon" src="{{images}}"></image>
+      </view>  
+    </picker>  
+    <button class="search" bindtap="getSearch">搜索</button>
+  </view> 
+
+  <view class='box'> 
+  <block wx:for="{{historyTask}}">
+    <view class='showData'>
+    <text>{{item.affair}}</text>
+      <radio-group id="{{index}}" class="radio-group" bindchange="radioChange">
+        <radio class="radio" value="accomplish" checked="{{item.accomplish}}">完成</radio>
+        <radio class="radio" value="unfinished" checked="{{item.unfinished}}">未完成     </radio>
+      </radio-group>
+      <image id="{{index}}" bindtap="deleteTask" src="{{deleteIcon}}"></image>
+    </view>
+  </block>
+</view>
+<button class="save" bindtap="saveModification">保存修改</button>

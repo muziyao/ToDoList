@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/addtask/addtask",
+    "pages/history/history",
+    "pages/user/login/login",
+    "pages/user/register/register",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#0094ff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/todayBacklog.png",
+        "iconPath": "images/todayBacklog.png",
+        "pagePath": "pages/index/index",
+        "text": "今日待办"
+      },
+      {
+        "selectedIconPath": "images/my.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/login/login",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

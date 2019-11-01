@@ -1,0 +1,40 @@
+/* pages/history/history.wxss */
+.section{
+  color: #70bcf6 ;
+  margin:20rpx;
+  padding:20rpx;
+  text-align: center;
+  display: flex;
+}
+.showData {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showData text{
+  width: 100px;
+}
+.showData image{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+.section button {
+  width: 80px;
+  height: 45px;
+}
+.picker {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-icon {
+  width: 40px;
+  height: 40px;
+}
+.save {
+  margin-top: 20px;
+}

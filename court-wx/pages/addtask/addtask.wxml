@@ -1,0 +1,20 @@
+<!--pages/addtask/addtask.wxml-->
+<view class="box">
+  <view class="section">  
+    <picker mode="date" value="{{date}}" start="1978-01-01" end="2050-12-31"  bindchange="bindDateChange">  
+      <view class="picker">  
+        日期: {{dates}}  
+      </view>  
+    </picker>  
+  </view> 
+  <view class="small-box">
+    <text>内容:</text>
+    <textarea class="content" bindinput="voteTitle" value="{{inputText}}" placeholder="请输入待办事情"></textarea>
+  </view>
+</view>
+<view class="small-btn" >
+  <button class="btn" bindtap="setAdd">创建</button>
+</view>
+
+ 
+
